@@ -189,7 +189,8 @@ nav {
       margin: 0 auto 25px auto; }
 
   footer.container {
-    margin: 0 auto 10px auto; }
+    margin: 0 auto 10px auto;
+    padding: 0; }
 
   nav {
     width: 49%; }
