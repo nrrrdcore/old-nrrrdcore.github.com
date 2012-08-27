@@ -76,7 +76,6 @@ span.command {
   margin: 0 0 0 20px; }
 
 footer.container {
-  padding: 0 40px;
   margin: 20px auto; }
 
 nav {
@@ -125,11 +124,7 @@ nav {
     display: inherit !important; }
 
   .hidden-tablet {
-    display: none !important; }
-
-  body {
-    padding-right: 40px;
-    padding-left: 40px; } }
+    display: none !important; } }
 @media (max-width: 767px) {
   .hidden-desktop {
     display: inherit !important; }
