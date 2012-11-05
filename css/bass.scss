@@ -172,13 +172,22 @@ nav {
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
+@media (max-width: 481px) {
+
+  body {
+    margin: 0 20px ;
+  }
 
   .container {
-    margin: 20px;
+    width: 100%;
+    max-width: 481px;
+    margin: 30px auto 60px auto;
+    background-color: transparent;
   }
 
   .header {
+    width: 100%;
+
     h1 a {
       float: none;
       width: 100%;
@@ -189,19 +198,20 @@ nav {
   }
 
   nav {
+    width: 222px;
     margin: 0 auto;
     float: none;
     display: block;
 
     a {
-      margin: 0 10px;
+      margin: 0 4px;
     }
   }
 
   .posts-icon {
     float: none;
     width: 100px;
-    margin: 10px auto 100px auto;
+    margin: 5px auto 100px auto;
     text-align: center;
     font-size: 100px;
     display: block;
@@ -209,12 +219,21 @@ nav {
   }
 
   .posts {
-
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .individual-post {
     float: none;
     width: 100%;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1em;
+    text-align: center;
   }
 }
 
