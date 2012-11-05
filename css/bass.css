@@ -180,6 +180,8 @@ nav {
     text-align: center;
     margin: 0 auto;
     padding: 0; }
+    .posts li {
+      margin: 5px auto; }
 
   .individual-post {
     float: none;
