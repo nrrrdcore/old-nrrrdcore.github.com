@@ -26,7 +26,7 @@ html, body {
   width: 70%;
   max-width: 790px;
   margin: 30px auto 60px auto;
-  background-color: auto;
+  background-color: transparent;
 }
 
 body {
@@ -170,3 +170,51 @@ nav {
 .clearfix:after {
   clear: both;
 }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+  .container {
+    margin: 20px;
+  }
+
+  .header {
+    h1 a {
+      float: none;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  nav {
+    margin: 0 auto;
+    float: none;
+    display: block;
+
+    a {
+      margin: 0 10px;
+    }
+  }
+
+  .posts-icon {
+    float: none;
+    width: 100px;
+    margin: 10px auto 100px auto;
+    text-align: center;
+    font-size: 100px;
+    display: block;
+    line-height: 0;
+  }
+
+  .posts {
+
+  }
+
+  .individual-post {
+    float: none;
+    width: 100%;
+  }
+}
+
