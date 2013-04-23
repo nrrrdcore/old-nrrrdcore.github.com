@@ -22,6 +22,10 @@ html, body {
   margin: 0;
 }
 
+body {
+  line-height: 1.5;
+}
+
 .container {
   width: 70%;
   max-width: 790px;
@@ -58,18 +62,19 @@ h2 {
   margin: 10px 0 18px 0;
   padding: 0;
   font-size: 1.2em;
+  line-height: 1.35;
 }
 
 h3 {
   font-size: .93em;
-  line-height: 1;
+  line-height: 1.35;
   margin: 27px 0 20px 0;
   text-shadow: 0 1px 1px #FFF;
 }
 
 p {
   font-size: .8em;
-  line-height: 1.35; 
+  line-height: 1.55; 
   margin: 1.3em 0;
   text-shadow: 0 1px 1px #FFF;
 
@@ -312,4 +317,14 @@ nav {
   }
 }
 
+.ok-woman {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url('/images/ok_woman.png');
+  background-size: 32px auto;
+  background-repeat: no-repeat;
+  margin-left: 18px;
+  margin-top: 7px;
+}
 

@@ -1,0 +1,21 @@
+/*
+Errno::ENOENT: No such file or directory - bass.scss
+
+Backtrace:
+/opt/boxen/rbenv/versions/1.9.3-p231-tcs-github1/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:339:in `read'
+/opt/boxen/rbenv/versions/1.9.3-p231-tcs-github1/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:339:in `update_stylesheet'
+/opt/boxen/rbenv/versions/1.9.3-p231-tcs-github1/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/opt/boxen/rbenv/versions/1.9.3-p231-tcs-github1/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:201:in `each'
+/opt/boxen/rbenv/versions/1.9.3-p231-tcs-github1/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/opt/boxen/rbenv/versions/1.9.3-p231-tcs-github1/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:299:in `block in watch'
+/opt/boxen/rbenv/versions/1.9.3-p231-tcs-github1/lib/ruby/gems/1.9.1/gems/sass-3.2.7/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/opt/boxen/rbenv/versions/1.9.3-p231-tcs-github1/lib/ruby/gems/1.9.1/gems/sass-3.2.7/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/opt/boxen/rbenv/versions/1.9.3-p231-tcs-github1/lib/ruby/gems/1.9.1/gems/sass-3.2.7/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/opt/boxen/rbenv/versions/1.9.3-p231-tcs-github1/lib/ruby/gems/1.9.1/gems/sass-3.2.7/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
+/opt/boxen/rbenv/versions/1.9.3-p231-tcs-github1/lib/ruby/gems/1.9.1/gems/sass-3.2.7/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
+/opt/boxen/rbenv/versions/1.9.3-p231-tcs-github1/lib/ruby/gems/1.9.1/gems/sass-3.2.7/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory - bass.scss"; }
