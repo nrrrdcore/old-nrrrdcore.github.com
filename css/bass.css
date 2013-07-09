@@ -137,9 +137,6 @@ h1 {
     color: #898989;
     font-size: 16px;
     font-weight: normal;
-    -webkit-transition: all .38s ease-in-out;
-    -moz-transition: all .38s ease-in-out; }
-  .post p a:hover {
     color: #f27478; }
 .post .back-arrow span {
   display: block;
@@ -160,6 +157,11 @@ h1 {
 .post li {
   margin: 0;
   padding: 0; }
+.post .light {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px; }
 
 nav {
   clear: both;
@@ -198,6 +200,15 @@ nav {
   -moz-transition: all .5s ease-in-out; }
   .resources a:hover {
     color: #f0585d; }
+.resources .back-arrow span {
+  display: block;
+  float: left;
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  font-size: 44px;
+  margin-right: 10px;
+  margin-top: -15px;
+  color: #C3E3E9; }
 
 .ok-woman {
   display: block;
