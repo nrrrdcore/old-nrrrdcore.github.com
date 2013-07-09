@@ -33,6 +33,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-rendering: optimizeLegibility;
+  cursor: pointer;
 
   &:hover {
     text-decoration: none;
@@ -200,6 +201,20 @@ h1 {
       color: #C3E3E9;
     }
   }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    color: #898989;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 nav {
@@ -231,7 +246,7 @@ nav {
   }
 
   ol {
-    margin-left: 35px;
+    margin-left: 0;
   }
 
   a {

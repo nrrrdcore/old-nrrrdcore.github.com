@@ -22,7 +22,8 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 3px;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  cursor: pointer; }
   a:hover {
     text-decoration: none; }
 
@@ -149,6 +150,16 @@ h1 {
   margin-right: 10px;
   margin-top: -15px;
   color: #C3E3E9; }
+.post ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  color: #898989;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 0; }
+.post li {
+  margin: 0;
+  padding: 0; }
 
 nav {
   clear: both;
@@ -170,7 +181,7 @@ nav {
   margin: 0;
   padding: 5px 0 14px 0; }
 .resources ol {
-  margin-left: 35px; }
+  margin-left: 0; }
 .resources a {
   display: block;
   font-family: "ProximaNovaRegular";
