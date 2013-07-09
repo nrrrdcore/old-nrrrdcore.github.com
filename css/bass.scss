@@ -1,20 +1,17 @@
 @font-face {
-  font-family: 'Pictos';
-  src: url('../fonts/pictos-web.eot');
-  src: url('../fonts/pictos-web.woff') format('woff'), 
-       url('../fonts/pictos-web.ttf') format('truetype'),
-       url('../fonts/pictos-web.svg#webfontphKv1xv9') format('svg');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'ProximaNovaSemibold';
+  src: url('../fonts/proximanova-semibold-webfont.ttf'),
+       url('../fonts/proximanova-semibold-webfont.eot'),
+       url('../fonts/proximanova-semibold-webfont.woff'),
+       url('../fonts/proximanova-semibold-webfont.svg'); 
 }
 
 @font-face {
-  font-family: 'KO';
-  src: url('../fonts/Knockout-HTF27-JuniorBantamwt.eot');
-  src: url('../fonts/Knockout-HTF27-JuniorBantamwt.ttf') format('truetype'),
-       url('../fonts/Knockout-HTF27-JuniorBantamwtsvg') format('svg');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'ProximaNovaRegular';
+  src: url('../fonts/proximanova-regular-webfont.ttf'),
+       url('../fonts/proximanova-regular-webfont.eot'),
+       url('../fonts/proximanova-regular-webfont.woff'),
+       url('../fonts/proximanova-regular-webfont.svg'); 
 }
 
 html, body {
@@ -23,32 +20,23 @@ html, body {
 }
 
 body {
-  line-height: 1.5;
-}
-
-.container {
-  width: 70%;
-  max-width: 790px;
-  margin: 30px auto 60px auto;
-  background-color: transparent;
-}
-
-body {
-  font-family: 'Helvetica Neue', Helvetica Neue, Helvetica, sans-serif;
-  color: #222;
-  font-weight: normal;
+  font: 16px/1 'Georgia';
+  color: #3a3a3a;
 }
 
 a {
-  font-family: 'Helvetica Neue', Helvetica, Sans-serif;
-  font-size: .8em;
-  font-weight: bold;
+  font-family: 'ProximaNovaSemibold';
+  font-weight: normal;
+  font-size: 14px;
+  color: #3a3a3a;
   text-decoration: none;
-  color: #222;
-}
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-rendering: optimizeLegibility;
 
-a:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 ol, ul {
@@ -58,110 +46,180 @@ ol, ul {
   list-style-image: none;
 }
 
-h2 {
-  margin: 10px 0 18px 0;
-  padding: 0;
-  font-size: 1.2em;
-  line-height: 1.35;
-}
-
-h3 {
-  font-size: .93em;
-  line-height: 1.35;
-  margin: 27px 0 20px 0;
-  text-shadow: 0 1px 1px #FFF;
+h3, h2 {
+  font-family: 'ProximaNovaSemibold';
+  font-style: normal;
+  font-weight: normal;
+  text-shadow: 0 1px 0 rgba(255,255,255,1);
+  font-size: 14px;
+  color: #3a3a3a; 
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 p {
-  font-size: .8em;
-  line-height: 1.55; 
-  margin: 1.3em 0;
-  text-shadow: 0 1px 1px #FFF;
+  font-size: 16px;
+  line-height: 1.5; 
+  margin: 10px 0;
+  color: lighten(#727272,9%);
+  text-shadow: 0 1px 0 #FFF;
 
   a {
-    font-size: inherit;
-    color: #222;
+    font-family: 'Georgia', serif;
+    text-transform: none;
+    letter-spacing: 0;
+    color: #898989;
+    font-size: 16px;
+    font-weight: normal;
+    -webkit-transition: all .38s ease-in-out;
+    -moz-transition: all .38s ease-in-out;
+
+    &:hover {
+      color: lighten(#EF4F54,8%);
+    }
   }
 }
 
-.header {
-  margin: 0 0 20px 0;
+h1 {
+  font-family: "ProximaNovaRegular";
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-transform: none;
+  line-height: 1.3;
+  font-size: 28px;
+  margin: 0;
+  color: lighten(#999,21%);
+  padding: 0 0 0 0;
+  text-rendering: optimizeLegibility;
+}
 
-  h1 a {
-    float: left;
-    font-family: 'KO';
-    font-size: 84px;
-    font-weight: normal;
-    font-style: normal;
-    margin: 0;
-    line-height: 1;
-    color: #222;
-    text-shadow: 0 1px 1px #FFF;
-  } 
+.container {
+  width: 960px;
+  margin: 70px auto 50px auto;
+  background-color: transparent;
+  clear: both;
+  overflow: hidden;
+}
 
-  h1 a:hover {
-    text-decoration: none;
+.sidebar {
+  width: 272px;
+  float: left;
+
+  .avatar {
+    display: block;
+    width: 272px;
+    height: 272px;
+    background-image: url('../images/ice_cream.jpg');
+    background-size: 272px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+  }
+
+  h3 {
+    margin-top: 25px;
+  }
+}
+
+.content {
+  width: 625px;
+  padding: 0 0 0 20px;
+  float: right;
+}
+
+.posts, .post {
+  margin-top: 0;
+
+  h2 {
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    a {
+      display: block;
+      font-family: "ProximaNovaRegular";
+      font-weight: normal;
+      letter-spacing: 0;
+      text-transform: none;
+      line-height: 1.3;
+      font-size: 30px;
+      margin: 0;
+      color: lighten(#EF4F54,8%);
+      padding: 0 0 0 0;
+      text-rendering: optimizeLegibility;
+    }
+  }
+
+  li {
+    margin: 0 0 42px 0;
+  }
+
+  .continue-reading {
+    display: block;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 44px;
+    color: #C3E3E9;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+.post {
+  p {
+    margin: 20px 0;
+
+    a {
+      font-family: 'Georgia', serif;
+      text-transform: none;
+      letter-spacing: 0;
+      color: #898989;
+      font-size: 16px;
+      font-weight: normal;
+      -webkit-transition: all .38s ease-in-out;
+      -moz-transition: all .38s ease-in-out;
+    }
+
+    a:hover {
+      color: lighten(#EF4F54,8%);
+    }
+  }
+
+  .back-arrow {
+    span {
+      display: block;
+      float: left;
+      -webkit-transform: rotate(-180deg);
+      -moz-transform: rotate(-180deg);
+      font-size: 44px;
+      margin-right: 10px;
+      margin-top: -15px;
+      color: #C3E3E9;
+    }
   }
 }
 
 nav {
-  float: right;
-  margin: 5px 0 0 0;
+  clear: both;
+  overflow: hidden;
+  display: block;
+  margin: 20px 0 -2px 0;
 
-  a {
-    margin: 0 0 0 15px;
-    color: #222;
-    font-weight: bold;
-    text-shadow: 0 1px 1px rgba(255,255,255,1);
-  }
-}
-
-.posts-icon {
-  font-family: 'Pictos';
-  font-size: 46px;
-  color: #DDD;
-  float: left;
-  line-height: 1;
-  text-shadow: 0 1px 1px #FFF;
-  margin: 0 20px 0 0;
-}
-
-.posts {
-  float: right;
-  margin: 20px 0 0 0;
-  width: 90%;
-
-  li {
-    margin: 0 0 1px 0;
+  span {
+    display: block;
+    float: left;
+    margin-right: 11px;
   }
 
-  a {
-    color: #222;
-    font-weight: bold;
+  .ss-icon {
+    color: #C3E3E9;
+    font-size: 44px;
+    text-align: left;
+    line-height: 1.4;
   }
-}
-
-.about-image {
-  width: 100%;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
-  box-shadow: 0 2px 1px #FFF;
-  margin: 0 0 5px 0;
-}
-
-.individual-post {
-  float: right;
-  margin: 10px 0 0 0;
-  width: 90%;
-}
-
-.video {
-  width: 100%;
-  margin: 20px 0 0 60px;
-}
-
-.slides {
-  margin: 20px 0 0 60px;
-  width: 640px;
 }
 
 .resources {
@@ -172,20 +230,41 @@ nav {
     padding: 5px 0 14px 0;
   }
 
-  span {
-    display:inline-block;
-    font-family: 'Pictos';
-    font-weight: normal;
-    color: #DDD;
-    font-size: 22px;
-    margin-right: 15px;
-  }
-
   ol {
     margin-left: 35px;
   }
+
+  a {
+    display: block;
+    font-family: "ProximaNovaRegular";
+    font-weight: normal;
+    letter-spacing: 0;
+    text-transform: none;
+    line-height: 1.3;
+    font-size: 30px;
+    margin: 0;
+    color: lighten(#EF4F54,8%);
+    padding: 0 0 0 0;
+    text-rendering: optimizeLegibility;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+
+    &:hover {
+      color: lighten(#EF4F54, 2%);
+    }
+  }
 }
 
+.ok-woman {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url('/images/ok_woman.png');
+  background-size: 32px auto;
+  background-repeat: no-repeat;
+  margin-left: 18px;
+  margin-top: 7px;
+}
 
 .clearfix {
   *zoom: 1;
@@ -217,114 +296,13 @@ nav {
     background-color: transparent;
   }
 
-  .header {
-    width: 100%;
-
-    h1 {
-      padding: 0;
-      margin: 0 auto;
-    }
-
-    h1 a {
-      float: none;
-      width: 100%;
-      display: block;
-      margin: 0 auto;
-      text-align: center;
-    }
-  }
-
-  nav {
-    width: 222px;
-    margin: 0 auto;
-    float: none;
-    display: block;
-
-    a {
-      margin: 0 4px;
-    }
-  }
-
-  .posts-icon {
-    float: none;
-    width: 100px;
-    margin: 8px auto 100px auto;
-    text-align: center;
-    font-size: 100px;
-    display: block;
-    line-height: 0;
-  }
-
-  .posts {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0;
-
-    li {
-      margin: 0 auto 1px auto;
-    }
-  }
-
-  .individual-post {
-    float: none;
-    width: 100%;
-    margin: 0;
-  }
-
-  h2 {
-    font-size: 1em;
-    text-align: center;
-  }
-
-  .slides {
-    margin: 0;
-  }
-
-  .slides-inner {
+  .sidebar {
     width: 100%;
   }
 
-  .resources {
-
-    span {
-      display: block;
-      text-align: center;
-      font-size: 100px;
-      line-height: 0;
-      margin:10px auto 100px auto;
-      width: 100px;
-    }
-
-    h2 {
-      margin-right: auto;
-      margin-left: auto;
-      text-align: center;
-      display: block;
-    }
-
-    ol {
-      margin-left: auto;
-      margin: 0 0 40px 0;
-      padding: 0 0 30px 0;
-      border-bottom: thin dotted #EEE;
-      margin: auto -20px;
-    }
-
-    li {
-      text-align: center;
-    }
+  .content {
+    width: 100%;
   }
 }
 
-.ok-woman {
-  display: block;
-  width: 32px;
-  height: 32px;
-  background-image: url('/images/ok_woman.png');
-  background-size: 32px auto;
-  background-repeat: no-repeat;
-  margin-left: 18px;
-  margin-top: 7px;
-}
 
