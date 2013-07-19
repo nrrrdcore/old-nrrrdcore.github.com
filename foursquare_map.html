@@ -22,7 +22,7 @@
               //console.dir(user_data);
               //$('article').text('Hello '+user_data.response.user.firstName);
               var checkins = checkin_resp.response.checkins.items;
-              for(int i = 0; i < checkins.length; i++) {
+              for(var i = 0; i < checkins.length; i++) {
                 var state = checkins[i].venue.location.state;
                 console.log(state);
               }
