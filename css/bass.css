@@ -232,6 +232,9 @@ nav {
 .clearfix:after {
   clear: both; }
 
+.italic {
+  color: #bcbcbc; }
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 481px) {
   body {

@@ -311,6 +311,10 @@ nav {
   clear: both;
 }
 
+.italic {
+  color: lighten(#898989, 20%);
+}
+
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 481px) {
