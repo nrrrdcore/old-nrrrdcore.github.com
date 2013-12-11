@@ -263,4 +263,4 @@ nav {
     width: 100%; }
 
   .body-image {
-    width: 400px; } }
+    max-width: 280px; } }
