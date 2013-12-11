@@ -187,7 +187,10 @@ h1 {
   .body-image {
     width: 625px;
     border: 1px solid #DDD;
+    margin: 10px 0;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
   }
 
   iframe {
