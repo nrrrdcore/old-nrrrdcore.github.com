@@ -184,6 +184,17 @@ h1 {
     }
   }
 
+  .body-image {
+    width: 625px;
+    border: 1px solid #DDD;
+    box-sizing: border-box;
+  }
+
+  iframe {
+    margin: 0 auto;
+    width: 100%;
+  }
+
   .back-arrow {
     span {
       display: block;
@@ -336,6 +347,10 @@ nav {
 
   .content {
     width: 100%;
+  }
+
+  .body-image {
+    width: 400px;
   }
 }
 
