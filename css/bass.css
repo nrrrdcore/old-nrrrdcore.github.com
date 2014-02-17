@@ -11,7 +11,7 @@ html, body {
   margin: 0; }
 
 body {
-  font: 16px/1 'Georgia';
+  font: 16px/1 "Georgia";
   color: #3a3a3a; }
 
 a {
@@ -48,16 +48,16 @@ p {
   line-height: 1.5;
   margin: 10px 0;
   color: #898989;
-  text-shadow: 0 1px 0 #FFF; }
+  text-shadow: 0 1px 0 white; }
   p a {
-    font-family: 'Georgia', serif;
+    font-family: "Georgia", serif;
     text-transform: none;
     letter-spacing: 0;
     color: #898989;
     font-size: 16px;
     font-weight: normal;
-    -webkit-transition: all .38s ease-in-out;
-    -moz-transition: all .38s ease-in-out; }
+    -webkit-transition: all 0.38s ease-in-out;
+    -moz-transition: all 0.38s ease-in-out; }
     p a:hover {
       color: #f27478; }
 
@@ -88,7 +88,7 @@ h1 {
     display: block;
     width: 272px;
     height: 272px;
-    background-image: url("../images/ice_cream.jpg");
+    background-image: url("../images/avatar.jpg");
     background-size: 272px;
     background-position: top center;
     background-repeat: no-repeat;
@@ -131,7 +131,7 @@ h1 {
 .post p {
   margin: 20px 0; }
   .post p a {
-    font-family: 'Georgia', serif;
+    font-family: "Georgia", serif;
     text-transform: none;
     letter-spacing: 0;
     color: #898989;
@@ -140,7 +140,7 @@ h1 {
     color: #f27478; }
 .post .body-image {
   width: 625px;
-  border: 1px solid #DDD;
+  border: 1px solid #dddddd;
   margin: 10px 0;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -168,7 +168,7 @@ h1 {
   margin: 0;
   padding: 0; }
 .post .light {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #eeeeee;
   padding-top: 20px;
   margin-top: 40px;
   margin-bottom: 40px; }
@@ -206,8 +206,8 @@ nav {
   color: #f27478;
   padding: 0 0 0 0;
   text-rendering: optimizeLegibility;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out; }
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out; }
   .resources a:hover {
     color: #f0585d; }
 .resources .back-arrow span {
