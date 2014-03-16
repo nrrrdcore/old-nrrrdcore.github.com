@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<div class="post">
+  <h2>{{ page.date | date: '%B ~%-eth, %Y' | replace: '~0', '' | replace: '~', '' | replace: '1th', '1st' | replace: '2th', '2nd' | replace: '3th', '3rd' | replace: '11st', '11th' | replace: '12nd', '12th' | replace: '13rd', '13th' }}</h2>
+  <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+  {{ content }}
+  <p><a class="back-arrow" href="/"><span class="back-arrow">➺</span></a></p>
+</div>
